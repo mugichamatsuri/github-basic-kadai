@@ -1,0 +1,19 @@
+aya@ayanoMacBook-Air git_tutorial % mkdir git_challenge
+aya@ayanoMacBook-Air git_tutorial % touch hello_world.txt
+aya@ayanoMacBook-Air git_tutorial % vi hello_world.txt 
+aya@ayanoMacBook-Air git_tutorial % cd git_challenge 
+aya@ayanoMacBook-Air git_challenge % git init
+Initialized empty Git repository in /Users/aya/git_tutorial/git_challenge/.git/
+aya@ayanoMacBook-Air git_challenge % git add hello_world.txt 
+aya@ayanoMacBook-Air git_challenge % git commit -m "hello_world.txtを追加" 
+[main (root-commit) ccff327] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+aya@ayanoMacBook-Air git_challenge % vi hello_world.txt 
+aya@ayanoMacBook-Air git_challenge % git add hello_world.txt 
+aya@ayanoMacBook-Air git_challenge % git commit -m "日本語訳を追記"
+[main 77fa60a] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+aya@ayanoMacBook-Air git_challenge % git log --oneline
+77fa60a (HEAD -> main) 日本語訳を追記
+ccff327 hello_world.txtを追加
